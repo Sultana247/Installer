@@ -888,7 +888,7 @@ service firewalld stop
 service firewalld start
 systemctl enable firewalld
 
-firewall-cmd --add-port=9280/udp --permanent
+firewall-cmd --add-port=10000-20000/udp --permanent
 firewall-cmd --add-service=http --permanent --zone=trusted
 chmod +x /usr/src/Installer/certbot.sh
 
